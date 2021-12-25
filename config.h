@@ -22,7 +22,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #pragma once
 
 /* Select hand configuration */
-#define MASTER_LEFT
+// #define MASTER_LEFT
 // #define MASTER_RIGHT
 #define EE_HANDS
 
@@ -36,4 +36,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 // If you are using an Elite C rev3 on the slave side, uncomment the lines below:
 #define SPLIT_USB_DETECT
+#define SPLIT_USB_TIMEOUT 2000
+#define SPLIT_USB_TIMEOUT_POLL 10
 #define NO_USB_STARTUP_CHECK
+
+// Mouse
+#define MK_COMBINED
+#define MOUSEKEY_INTERVAL 16
+#define MOUSEKEY_DELAY 0
+#define MOUSEKEY_TIME_TO_MAX 24
+#define MOUSEKEY_MAX_SPEED 6
+#define MOUSEKEY_WHEEL_DELAY 0
+#define MOUSEKEY_WHEEL_INTERVAL 85
+#define MK_C_OFFSET_2 18
+
+#define OLED_BRIGHTNESS 80
