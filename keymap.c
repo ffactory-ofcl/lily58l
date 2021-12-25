@@ -1,6 +1,7 @@
  /* Copyright 2017 F_YUUCHI
   * Copyright 2020 Drashna Jaelre <@drashna>
   * Copyright 2020 Ben Roesner (keycapsss.com)
+  * Copyright 2021 Filippo Orru (github.com/ffactory-ofcl)
   *
   * This program is free software: you can redistribute it and/or modify
   * it under the terms of the GNU General Public License as published by
