@@ -92,12 +92,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 
 oled_rotation_t oled_init_user(oled_rotation_t rotation) {
-    return OLED_ROTATION_0;
-    /*
     if (is_keyboard_master()) {
-        return OLED_ROTATION_270;
+        return OLED_ROTATION_0;
     } else {
-    }*/
+        return OLED_ROTATION_270;
+    }
 }
 
 void render_lily58_logo(void) {
@@ -143,6 +142,8 @@ void render_lily58_logo(void) {
 void oled_task_user(void) {
   if (is_keyboard_master()) {
     render_lily58_logo();
+  } else {
+    oled_write_P(PSTR("\nPlug out & in\n"), false);
   }
 }
 #endif
